@@ -1,4 +1,3 @@
-var myName = "Sue";
   // This is called with the results from from FB.getLoginStatus().
   function statusChangeCallback(response) {
     console.log('statusChangeCallback');
@@ -33,7 +32,7 @@ var myName = "Sue";
 
   window.fbAsyncInit = function() {
   FB.init({
-    appId      : '704286456318314',
+    appId      : 'appID',
     cookie     : true,  // enable cookies to allow the server to access 
                         // the session
     xfbml      : true,  // parse social plugins on this page
@@ -81,7 +80,3 @@ var myName = "Sue";
 $(document).ready(function(){ 
   $("h2").text("Welcome, friend.");
 });
-/*$("#updateStatus").submit(function(event){
-  alert("Thank you for submitting!");
-  event.preventDefault();
-})*/
