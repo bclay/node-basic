@@ -4,18 +4,14 @@
 	<meta charset="UTF-8">
 	<title>App Home</title>
 	<link href="./css/bootstrap.min.css" rel="stylesheet">
-	<script type="text/javascript" src="./js/jquery-1.11.1.min.js"></script>
-	<script type="text/javascript" src="./js/facebook.js"></script>
+
 </head>
 <body>
-	
-
     <h1><div id="status"></h1>
-    <fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
-</fb:login-button>
-
-<h2>Yo.</h2>
-</div>
+    	<fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
+		</fb:login-button>
+	</div>
+	<h2>Yo.</h2>
 	<form id="updateStatus" method="post" action="/sendinfo">
 		<!--Name field-->
 		<h1>Enter your name:
@@ -26,6 +22,8 @@
 		<!--Save button-->
 		<input type="submit" name="redirect" value="Save" class="btn btn-primary btn-large" color:"">
 	</form>
-
+	<!-- Upload Javascript files from the public folder-->
+	<script type="text/javascript" src="./js/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" src="./js/facebook.js"></script>
 </body>
 </html>
