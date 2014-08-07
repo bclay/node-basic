@@ -14,7 +14,12 @@ var launch = function(req, res){
 //also sends the information to the display page apart from the database
 var sendInfo = function(req, res){
 	//send the name and status info directly to the next page
-	name = req.body.myName;
+	if (req.body.myName){
+		name = req.body.myName;
+	}
+	else{
+		name = "Not sure";
+	}
 	status = req.body.myStatus;
 	//send the name and status info to the database
 	statusDB.add_status(name, status, function(err, data){
